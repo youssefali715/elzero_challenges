@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background-color:#f6f6f6
+}
+/* p::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: green;
+    transform: rotate(
+130deg
+);
+}
+P{
+    position: relative;
+    margin-left: 15px;
+}
+p::after{
+    content: "";
+    width: 5px;
+    height: 17px;
+    position: absolute;
+    background-color: green;
+    left: -2px;
+    transform: rotate(
+307deg
+);
+    top: -3px;
+} */
+.container{
+    width: 900px;
+    margin: auto;
+}
+.container > h2 {
+    text-align: end;
+    width: fit-content;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+    background-color: #2196f3;
+    color: white;
+    padding: 0 40px 0 20px;
+    position: relative;
+}
+.container > h2::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    border: 22px solid;
+    border-color: transparent #f6f6f6 transparent transparent;
+}
+.container > main {
+    display: flex;
+    justify-content: center;
+    gap:40px
+}
+.container > main > section{
+    width:1000px
+}
+.container > main > section > header{
+    background-color: #f44336;
+    color: white;
+    padding-left:20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.container > main > section > header.pro{
+    background-color: #2196f3;
+}
+.container > main > section > header > h3{
+    margin:0;
+    padding:5px 0
+}
+.container > main > section > main{
+    background-color: white;
+    position: relative;
+}
+.container > main > section > main > p{
+    margin:0;
+    padding:16px 50px;
+    position: relative;
+}
+.container > main > section > main > p > .circle-true{
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: #009688;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+.container > main > section > main > p > .circle-question{
+    width: 35px;
+    height: 35px;
+    background: #7e7e7e;
+    border-radius: 50%;
+    position: absolute;
+    color:white;
+    top: 15px;
+    right: 5px;
+    padding: 3px 14px;
+}
+.container > main > section > main > p > .circle-true::before {
+    content: "";
+    width: 21px;
+    height: 5px;
+    background: #ffffff;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    transform: rotate( 
+135deg
+ );
+}
+.container > main > section > main > p > .circle-true::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    background: #ffffff;
+    position: absolute;
+    top: 17px;
+    left: 8px;
+    transform: rotate( 
+224deg
+ );
+}
+.container > main > section > main > p > .circle-false{
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: #f44336;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+.container > main > section > main > p > .circle-false::before {
+    content: "";
+    width: 21px;
+    height: 5px;
+    background: #ffffff;
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    transform: rotate( 
+135deg
+ );
+}
+.container > main > section > main > p > .circle-false::after {
+    content: "";
+    width: 21px;
+    height: 5px;
+    background: #ffffff;
+    position: absolute;
+    top: 15px;
+    left: 6px;
+    transform: rotate( 
+225deg
+ );
+}

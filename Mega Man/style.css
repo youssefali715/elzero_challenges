@@ -1,0 +1,35 @@
+div{
+    width: 1000px;
+    height: 500px;
+    background-color: #eee;
+    position: relative;
+    margin:auto
+}
+body{
+    margin: 230px;
+}
+div > img{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    z-index: 1;
+}
+div::before{
+    top: -25px;
+    content: '';
+    width: 550px;
+    left: -25px;
+    position: absolute;
+    height: 550px;
+    z-index: -1;
+    background-color: #343a40;
+
+}
+div::after{
+    content: '';
+    position: absolute;
+    background-color: #343a40;
+    width: 500px;
+    height: 500px;
+    right: -25px;
+}
